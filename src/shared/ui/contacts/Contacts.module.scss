@@ -1,0 +1,9 @@
+.root {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  .messenger {
+    display: flex;
+    align-items: center;
+  }
+}
