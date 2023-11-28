@@ -1,0 +1,19 @@
+.root {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: end;
+  margin-top: 90px;
+  .footerWrapper {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+  .copyright {
+    text-align: end;
+    width: 239px;
+    font-size: 12px;
+    line-height: 14.63px;
+    font-weight: 400;
+  }
+}
