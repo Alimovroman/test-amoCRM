@@ -17,23 +17,28 @@ export const Footer = () => {
   return (
     <div className={style.root}>
       <div className={style.footerWrapper}>
-        <div>
-          <div>О компании</div>
-          <div>
-            <div>Партнёрская программа</div>
-            <div>Вакансии</div>
+        <div className={style.menuBlock}>
+          <div className={style.headerMenu}>O компании</div>
+          <div className={style.menuItems}>
+            <div className={style.menuItem}>Партнёрская программа</div>
+            <div className={style.menuItem}>Вакансии</div>
           </div>
         </div>
-        <div>
-          <div>Меню</div>
-          <div>
-            {menuItems.map((e) => (
-              <div>{e}</div>
+        <div className={`${style.menuBlock} ${style.menuBlockSecond}`}>
+          <div className={style.headerMenu}>Меню</div>
+          <div className={style.menuItems}>
+            {menuItems.map((e, i) => (
+              <div key={i} className={style.menuItem}>
+                {e}
+              </div>
             ))}
           </div>
         </div>
-        <div>
-          <Contacts />
+        <div className={style.menuBlock}>
+          <div className={`${style.headerMenu} ${style.headerMenuLast}`}>
+            Контакты
+          </div>
+          <Contacts flexDirection="column" />
           <div>Москва, Путевой проезд 3c1, к 902</div>
         </div>
       </div>

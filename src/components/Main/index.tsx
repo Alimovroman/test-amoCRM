@@ -3,36 +3,43 @@ import style from "./Main.module.scss";
 export const Main = () => {
   return (
     <div className={style.root}>
-      <div className={style.leftBlock}>
-        <div className={style.leftBlock}>
-          Зарабатывайте больше <span>c WELBEX</span>
+      <div className={style.leftBlockWrapper}>
+        <div className={style.leftBlockMainContent}>
+          Зарабатывайте больше
+          <span className={style.textGradientLeftBlock}>c WELBEX</span>
         </div>
-        <div>Развиваем и контролируем продажи за вас</div>
+        <div className={style.descriptionLeftBlock}>
+          Развиваем и контролируем продажи за вас
+        </div>
       </div>
       <div className={style.rightBlock}>
         <div className={style.header}>
-          Вместе c <span>бесплатной консультацией </span>мы дарим:
+          Вместе c{" "}
+          <span className={style.textGradientRightBlock}>
+            бесплатной консультацией{" "}
+          </span>
+          мы дарим:
         </div>
         <div className={style.rightBlockContent}>
           <div className={style.rightBlockItem}>
-            Виджеты{" "}
-            <span className={style.itemDescription}>30 готовых решений</span>
+            Виджеты
+            <div className={style.itemDescription}>30 готовых решений</div>
           </div>
           <div className={style.rightBlockItem}>
-            Dashboard{" "}
-            <span className={style.itemDescription}>
+            Dashboard
+            <div className={style.itemDescription}>
               c показателями вашего бизнеса
-            </span>
+            </div>
           </div>
           <div className={style.rightBlockItem}>
-            Skype Аудит{" "}
-            <span className={style.itemDescription}>
+            Skype Аудит
+            <div className={style.itemDescription}>
               отдела продажи CRM системы
-            </span>
+            </div>
           </div>
           <div className={style.rightBlockItem}>
-            35 дней{" "}
-            <span className={style.itemDescription}>использования CRM</span>
+            35 дней
+            <div className={style.itemDescription}>использования CRM</div>
           </div>
         </div>
         <div className={style.buttonWrapper}>

@@ -4,12 +4,45 @@
   justify-content: center;
   align-items: end;
   margin-top: 90px;
+  font-size: 16px;
+  line-height: 19.36px;
+  font-weight: 400;
   .footerWrapper {
     display: flex;
     justify-content: space-between;
     width: 100%;
+    .menuBlock {
+      .headerMenu {
+        color: #656566;
+        font-size: 14px;
+        font-weight: 700;
+        line-height: 16.94px;
+        letter-spacing: 0.05em;
+        text-transform: uppercase;
+        margin-bottom: 15px;
+      }
+      .headerMenuLast {
+        text-align: end;
+      }
+      .menuItems {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        align-items: flex-start;
+        height: 125px;
+        .menuItem {
+          margin-bottom: 5px;
+          margin-right: 55px;
+        }
+      }
+    }
+    .menuBlockSecond {
+      margin-right: 250px;
+    }
   }
   .copyright {
+    margin-top: 25px;
     text-align: end;
     width: 239px;
     font-size: 12px;
