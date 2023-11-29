@@ -2,10 +2,13 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 250px;
+  width: 400px;
   .messengers {
-    width: 100px;
+    width: 130px;
     justify-content: space-between;
+  }
+  @media screen and (max-width: 415px) {
+    display: none;
   }
 }
 .rootColumn {
@@ -13,6 +16,9 @@
   justify-content: space-between;
   align-items: flex-end;
   flex-direction: column;
+  @media screen and (max-width: 415px) {
+    align-items: flex-start;
+  }
   .messengers {
     margin-bottom: 10px;
     margin-top: 10px;

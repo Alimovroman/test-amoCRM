@@ -7,11 +7,22 @@
   font-size: 16px;
   line-height: 19.36px;
   font-weight: 400;
+  @media screen and (max-width: 415px) {
+    font-size: 14px;
+  }
   .footerWrapper {
     display: flex;
     justify-content: space-between;
     width: 100%;
+    @media screen and (max-width: 415px) {
+      flex-direction: column;
+      flex-wrap: wrap;
+    }
     .menuBlock {
+      width: 100%;
+      @media screen and (max-width: 415px) {
+        margin-bottom: 25px;
+      }
       .headerMenu {
         color: #656566;
         font-size: 14px;
@@ -23,22 +34,48 @@
       }
       .headerMenuLast {
         text-align: end;
+        @media screen and (max-width: 415px) {
+          text-align: start;
+        }
       }
       .menuItems {
         display: flex;
         flex-direction: column;
         flex-wrap: wrap;
-        justify-content: flex-start;
+        justify-content: space-between;
         align-items: flex-start;
-        height: 125px;
+        //height: 145px;
+        @media screen and (max-width: 415px) {
+          height: auto;
+        }
         .menuItem {
           margin-bottom: 5px;
           margin-right: 55px;
+          @media screen and (max-width: 415px) {
+            max-width: 110px;
+            margin-bottom: 10px;
+            margin-right: 35px;
+          }
         }
+      }
+    }
+    .menuLastBlock {
+      text-align: end;
+      @media screen and (max-width: 415px) {
+        text-align: start;
       }
     }
     .menuBlockSecond {
       margin-right: 250px;
+      @media screen and (max-width: 415px) {
+        margin-right: 0;
+      }
+      .menuItems {
+        height: 145px;
+        @media screen and (max-width: 415px) {
+          height: 190px;
+        }
+      }
     }
   }
   .copyright {
@@ -48,5 +85,10 @@
     font-size: 12px;
     line-height: 14.63px;
     font-weight: 400;
+    @media screen and (max-width: 415px) {
+      width: 100%;
+      text-align: start;
+      margin-top: 35px;
+    }
   }
 }

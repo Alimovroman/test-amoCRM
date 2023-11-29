@@ -6,8 +6,10 @@ import { Menu } from "./Menu/Menu";
 export const Header = () => {
   return (
     <div className={style.root}>
-      <Logo />
-      <Menu />
+      <div className={style.WrapperLogoMenu}>
+        <Logo />
+        <Menu />
+      </div>
       <Contacts />
     </div>
   );

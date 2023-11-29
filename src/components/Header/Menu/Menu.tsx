@@ -1,33 +1,19 @@
 import style from "./Menu.module.scss";
 
 export const Menu = () => {
+  const menuItems = ["Услуги", "Виджеты", "Интеграции", "Кейсы", "Сертификаты"];
   return (
     <div className={style.root}>
-      <div>
-        <a href={"#"} className={style.menuItem}>
-          Услуги
-        </a>
-      </div>
-      <div>
-        <a href={"#"} className={style.menuItem}>
-          Виджеты
-        </a>
-      </div>
-      <div>
-        <a href={"#"} className={style.menuItem}>
-          Интеграции
-        </a>
-      </div>
-      <div>
-        <a href={"#"} className={style.menuItem}>
-          Кейсы
-        </a>
-      </div>
-      <div>
-        <a href={"#"} className={style.menuItem}>
-          Сертификаты
-        </a>
-      </div>
+      {menuItems.map((e, i) => (
+        <div
+          key={i}
+          className={i === menuItems.length - 1 ? style.menuLastItem : ""}
+        >
+          <a href={"#"} className={style.menuItem}>
+            {e}
+          </a>
+        </div>
+      ))}
     </div>
   );
 };

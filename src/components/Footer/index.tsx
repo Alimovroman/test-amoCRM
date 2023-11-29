@@ -34,7 +34,7 @@ export const Footer = () => {
             ))}
           </div>
         </div>
-        <div className={style.menuBlock}>
+        <div className={`${style.menuBlock} ${style.menuLastBlock}`}>
           <div className={`${style.headerMenu} ${style.headerMenuLast}`}>
             Контакты
           </div>
@@ -43,7 +43,8 @@ export const Footer = () => {
         </div>
       </div>
       <div className={style.copyright}>
-        ©WELBEX 2022. Bce права защищены. Политика конфиденциальности
+        ©WELBEX 2022. Bce права защищены.
+        <br /> Политика конфиденциальности
       </div>
     </div>
   );
